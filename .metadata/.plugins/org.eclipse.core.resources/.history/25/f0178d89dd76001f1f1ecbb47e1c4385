@@ -52,9 +52,9 @@ int main(void)
     TA0CCR1 = TAR + TIMER_INCREMENT;
 
     // ADC
-    ADC10AE0|=(1<<1);                   // A1 será entrada analógica
-    ADC10CTL1 =INCH_1 ;                 // (1<<12) Mux Analógico tome la entrada A1
-    ADC10CTL0|= ADC10ON + ADC10IE;      // ADC10ON enciende, ADC10IE habilita interrupción del ADC
+    ADC10AE0|=(1<<1);               //A1 será entrada analógica
+    ADC10CTL1 =INCH_1 ;             // (1<<12) Mux Analógico tome la entrada A1
+    ADC10CTL0|= ADC10ON + ADC10IE;  //ADC10ON, ADC10IE
 
 
     __bis_SR_register(GIE);             // Global interrupt enable (biS prender biC apagar)
