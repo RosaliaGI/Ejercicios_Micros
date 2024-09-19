@@ -1,0 +1,57 @@
+#include <msp430.h>
+
+unsigned char secuencia[] = {12, 6, 3, 9};  // 1100 0110 0011 1001 (para mover el motor, los pasos)
+unsigned char i = 0;
+#define TIMER_INCREMENT 62500
+unsigned char interrupt_count = 0;
+unsigned char motor_moving = 1;
+
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void Timer_A (void)
+{
+    TA0CCTL0&=~(1<<0);              // Apagamos bandera, 0 en bit menos significativo
+    TA0CCR0 = TAR + 3000;
+
+    if (motor_moving){
+        if((P1IN & (1<<3))!= 0)         // revisamos si estamos presionando el botón botón está en P1.3
+                P2OUT = secuencia[i++%4];
+        else
+            P2OUT = secuencia[i--%4];
+    }
+}
+
+#pragma vector=TIMER0_A1_VECTOR
+__interrupt void Timer_A1 (void){
+    if (TA0IV == TA0IV_TACCR1) {     // Verificar que la interrupción es de TACCR1
+        TA0CCTL1 &= ~CCIFG;          // Limpiar bandera de interrupción
+        interrupt_count++;
+
+        if (interrupt_count == 20) { // 20 interrupciones de 500 ms (10 segundos)
+            motor_moving = 0;       // Detener motor
+        } else if (interrupt_count == 30) { // 30 interrupciones de 500 ms (15 segundos)
+            interrupt_count = 0;   // Resetear el conteo
+            motor_moving = 1;       // Reanudar motor
+        }
+    }
+}
+
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
+    // GPIO
+    P2DIR = 0x0F;               // 0b0000 1111, 15, BIT3 + BIT2 + BIT1 + BIT0  Ponemos los pines como salida
+
+    // Config timer
+    TA0CTL = (2<<8)+(2<<4)+(3<<6);      // Seleccionamos SMCLK,  Modo continuo, divider 8
+
+    TA0CCTL0 |= (1<<4);         // Habilitador local para CCR0 la interrupción
+    TA0CCR0 = TAR+3000;
+
+    TA0CCTL1 |= (1<<4);
+    TA0CCR1 = TAR + TIMER_INCREMENT;
+
+
+    __bis_SR_register(GIE);     // Globar interrup enable (biS prender biC apagar)
+
+    while(1);
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ejercicio4_motorPasos_uart&apos; to &apos;ejercicio4_motorPasos_ADC_Potenciometro&apos;" description="Rename resource &apos;ejercicio4_motorPasos_uart&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ejercicio4_motorPasos_uart" name="ejercicio4_motorPasos_ADC_Potenciometro" stamp="1726769333877" updateReferences="true"/>
+</session>

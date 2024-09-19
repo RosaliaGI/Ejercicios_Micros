@@ -1,0 +1,847 @@
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 60: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 62: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 62: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ejercicio2_motorPasos_timers ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "ejercicio2_motorPasos_timers.out" 
+DEL /F "main.obj" 
+DEL /F "main.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio2_motorPasos_timers ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio2_motorPasos_timers" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 8: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 10: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 28: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 28: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 30: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 30: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio2_motorPasos_timers.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio2_motorPasos_timers.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio2_motorPasos_timers_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio2_motorPasos_timers.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio2_motorPasos_timers.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio2_motorPasos_timers ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio2_motorPasos_timers.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 21: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 21: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 23: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 23: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 61: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 61: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 63: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 63: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 9: remark #1535-D: (ULP 8.1) variable "interrupt_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 10: remark #1535-D: (ULP 8.1) variable "motor_moving" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 17: error #29: expected an expression
+"../main.c", line 21: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 21: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 23: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 23: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 57: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 21: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 21: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 23: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 23: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 57: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 18: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 20: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 20: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 38: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 18: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 20: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 20: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 38: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 10: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 12: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 36: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 36: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 38: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 38: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 7: remark #1535-D: (ULP 8.1) variable "motor_moving" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 10: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 12: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 36: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 36: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 38: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 38: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 7: remark #1535-D: (ULP 8.1) variable "motor_moving" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 9: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 11: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 28: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 28: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 30: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 30: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 11: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 13: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 32: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 32: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 34: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 34: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 10: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 12: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 31: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 31: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 33: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 33: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 10: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 12: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 31: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 31: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 33: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 33: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 14: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 14: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 16: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 16: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 36: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 16: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 16: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 18: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 38: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 6: remark #1535-D: (ULP 8.1) variable "interrupt_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 7: remark #1535-D: (ULP 8.1) variable "motor_moving" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 41: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 6: remark #1535-D: (ULP 8.1) variable "interrupt_count" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 7: remark #1535-D: (ULP 8.1) variable "motor_moving" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 56: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 56: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 56: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio3_motorPasos_interrupciones" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 56: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio3_motorPasos_interrupciones.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio3_motorPasos_interrupciones.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio3_motorPasos_interrupciones_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio3_motorPasos_interrupciones.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio3_motorPasos_interrupciones.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio3_motorPasos_interrupciones ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio3_motorPasos_interrupciones.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ejercicio4_motorPasos_ADC_Potenciometro ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "ejercicio4_motorPasos_uart.out" 
+DEL /F "main.obj" 
+DEL /F "main.d" 
+No se pudo encontrar C:\MSP430\Tareas\ejercicio4_motorPasos_ADC_Potenciometro\Debug\ejercicio4_motorPasos_uart.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio4_motorPasos_ADC_Potenciometro ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccs1280/ccs/ccs_base/msp430/include" --include_path="C:/MSP430/Tareas/ejercicio4_motorPasos_ADC_Potenciometro" --include_path="C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 19: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 19: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 56: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "ejercicio4_motorPasos_ADC_Potenciometro.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"ejercicio4_motorPasos_ADC_Potenciometro.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccs1280/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ejercicio4_motorPasos_ADC_Potenciometro_linkInfo.xml" --use_hw_mpy=none --rom_model -o "ejercicio4_motorPasos_ADC_Potenciometro.out" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "ejercicio4_motorPasos_ADC_Potenciometro.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ejercicio4_motorPasos_ADC_Potenciometro ****
+
+"C:\\ti\\ccs1280\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'ejercicio4_motorPasos_ADC_Potenciometro.out' is up to date.
+
+**** Build Finished ****
