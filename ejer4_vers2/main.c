@@ -4,33 +4,13 @@ unsigned char secuencia[] = {12, 6, 3, 9};  // 1100 0110 0011 1001 (para mover e
 unsigned char i = 0;
 volatile unsigned short ADC_result;
 
-#pragma vector=ADC10_VECTOR
-__interrupt void ADC_ISR (void)
-{
-    ADC_result=ADC10MEM*5;              //ADC10MEM resultado de la conversion del ADC y se apaga la flag,
-                                        //se guarda el restultado en la variable ADC_result
-}
-
 #pragma vector=TIMER0_A0_VECTOR
 __interrupt void Timer_A (void)
 {
     TA0CCTL0 &=~(1<<0);                 // Apagamos bandera de interrup, 0 en bit menos significativo
-    TA0CCR0 = TAR + ADC_result;
-
-    if((P1IN & (1<<3))!= 0)             // revisamos si estamos presionando el botón botón está en P1.3
-        P2OUT = secuencia[i++%4];
-    else
-        P2OUT = secuencia[i--%4];
-
+    TA0CCR0 = TAR + 2500;
+    P2OUT = secuencia[i++%4];
 }
-
-#pragma vector=TIMER0_A1_VECTOR
-__interrupt void Timer_A1 (void){
-    TA0CCTL1 &=~(1<<0);                 // Apagamos bandera de interrup, 0 en bit menos significativo
-    TA0CCR1=TAR+6250;                   // Restart CCR1 50ms
-    ADC10CTL0|=(1<<0);                  // Start of conversion
-}
-
 
 int main(void)
 {
@@ -46,6 +26,7 @@ int main(void)
     TA0CCTL0 |= (1<<4);                 // Habilitador local para CCR0 la interrupción
     TA0CCR0 = TAR + 2500;
 
+
     // El de las conversiones de ADC
     TA0CCTL1 |= (1<<4);                 // Habilitador local para CCR1 la interrupción
     TA0CCR1 = TAR + 6250;               // 50 ms para que empiece la conversión (50,000us / 8us = 6250 -> 50ms)
@@ -55,7 +36,6 @@ int main(void)
     ADC10CTL1 =INCH_1;                 // (1<<12) Mux Analógico tome la entrada A1
     ADC10CTL0|= ADC10ON + ADC10IE;      // ADC10ON enciende, ADC10IE habilita interrupción del ADC
     ADC10CTL0|=ENC;                     // ENC=1 (enable conversion)
-
     __bis_SR_register(GIE);             // Global interrupt enable (biS prender biC apagar)
 
     while(1);

@@ -11,7 +11,11 @@
 		<item key="CCS.IMPORT_FROM_ARCHIVE" value="false"/>
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.project.ProjectSettingsPage">
+		<item key="CCS.TARGET" value="devices/MSP430G2553"/>
 		<section name="1">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
 		</section>
 	</section>
 </section>
