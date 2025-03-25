@@ -7,8 +7,8 @@ volatile unsigned short ADC_result;
 #pragma vector=ADC10_VECTOR
 __interrupt void ADC_ISR (void)
 {
-    ADC_result=ADC10MEM*5;              //ADC10MEM resultado de la conversion del ADC y se apaga la flag,
-                                        //se guarda el restultado en la variable ADC_result
+    ADC_result=ADC10MEM*5;              // ADC10MEM resultado de la conversion del ADC y se apaga la flag,
+                                        // se guarda el restultado en la variable ADC_result
 }
 
 #pragma vector=TIMER0_A0_VECTOR
@@ -52,7 +52,7 @@ int main(void)
 
 // ADC
     ADC10AE0|=(1<<1);                   // A1 será entrada analógica
-    ADC10CTL1 =INCH_1;                 // (1<<12) Mux Analógico tome la entrada A1
+    ADC10CTL1 =INCH_1;                  // (1<<12) Mux Analógico tome la entrada A1
     ADC10CTL0|= ADC10ON + ADC10IE;      // ADC10ON enciende, ADC10IE habilita interrupción del ADC
     ADC10CTL0|=ENC;                     // ENC=1 (enable conversion)
 
